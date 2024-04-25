@@ -1,0 +1,111 @@
+:root {
+  --black: #1a1a1a;
+  --white: #ffffff;
+  --accent: #580b0b;
+  --text: rgb(107, 107, 107);
+  --gap: 20px;
+  --grey: #f6f6f6;
+  --max-width: 1400px;
+  --trans: all 0.4s ease-in-out;
+  --shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+  --rad: 10px;
+}
+
+*::before,
+*::after,
+* {
+  box-sizing: border-box;
+  // border: 1px solid red;
+  margin: 0px;
+  font-family: "Noto Sans Devanagari", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari:wght@100..900&display=swap');
+
+// font-family: "Noto Sans Devanagari", sans-serif;
+// font-optical-sizing: auto;
+// font-style: normal;
+
+body {
+  width: 100%;
+  overflow-x: hidden;
+  font-weight: 700;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.heading,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  text-transform: capitalize;
+  font-style: normal;
+  color: var(--accent);
+  line-height: 100%;
+}
+
+p {
+  text-align: justify;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  letter-spacing: 1px;
+  word-spacing: 2px;
+  font-weight: 400;
+  color: var(--text);
+}
+
+
+
+.bg-img-cover {
+  background-position: top center !important;
+  background-size: cover !important;
+  background-repeat: no-repeat !important;
+}
+
+.bg-img-contain {
+  background-position: center center !important;
+  background-size: contain !important;
+  background-repeat: no-repeat !important;
+}
+
+.parent {
+  width: 100vw;
+
+  .cont {
+      max-width: var(--max-width);
+      margin: auto;
+      padding: 0px 10px;
+      height: 100%;
+      // background: rgba(102, 51, 153, 0.073);
+  }
+}
+
+.btn {
+  cursor: pointer;
+  border: 3px solid var(--accent);
+  background: var(--accent);
+  color: var(--white) !important;
+  font-size: 18px;
+  padding: 5px 20px;
+  border-radius: 200px;
+  text-decoration: none;
+  transition: var(--trans);
+  width: fit-content;
+
+  &:hover {
+      background: transparent;
+      color: var(--accent) !important;
+  }
+}
+
+a {
+  text-decoration: none;
+}

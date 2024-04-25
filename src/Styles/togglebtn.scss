@@ -1,0 +1,28 @@
+.btn1{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    border-radius: 50%;
+
+    button{
+        height: 50px;
+        width: 50px;
+        background: var(--accent);
+        border: none;
+        border: 1px solid white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 5px;
+        border-radius: 50%;
+
+
+        span{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 20px;
+        }
+    }
+}
