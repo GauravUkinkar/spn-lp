@@ -1,16 +1,16 @@
 .pop {
-  width:100svw;
-  height:100vh;
+  width: 100svw;
+  height: 100vh;
   background-color: rgba(0, 0, 0, 0.638);
   position: fixed;
-  z-index:100;
-  display:flex;
+  z-index: 100;
+  display: flex;
   align-items: center;
   justify-content: center;
   backdrop-filter: blur(5px);
   .main-popup {
     background-color: white;
-    display:flex;
+    display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
@@ -18,10 +18,10 @@
     width: 300px;
     border-radius: 10px;
     position: relative;
-    .close{
-      top:5px;
+    .close {
+      top: 5px;
       right: 5px;
-      background:black;
+      background: black;
       height: 50px;
       width: 50px;
       position: absolute;
@@ -30,35 +30,30 @@
       align-items: center;
       border-radius: 50%;
 
-      svg{
+      svg {
         font-size: 30px;
         color: white;
       }
-    
     }
-    
-   
- .icons-list {
+
+    .icons-list {
       display: flex;
       gap: 20px;
       padding: 10px;
 
       a {
         color: white;
-        background-color:var(--accent);
-        padding:10px;
+        background-color: var(--accent);
+        padding: 10px;
         border-radius: 50%;
-        width:50px;
-        height:50px;
-        display:flex;
+        width: 50px;
+        height: 50px;
+        display: flex;
         align-items: center;
         justify-content: center;
-    display:flex;
-    align-items: center;
-    justify-content: center;
-  
-  
-  
+        display: flex;
+        align-items: center;
+        justify-content: center;
       }
     }
   }
@@ -70,7 +65,7 @@
 
   .overlay {
     height: 100%;
-    background: url("../Assets/h1.jpg");
+    background: url("../Assets/desktop1.webp");
     z-index: -1;
     width: 100%;
     position: absolute;
@@ -93,6 +88,26 @@
       color: white;
     }
   }
+  @media only screen and (max-width: 1000px) and (min-width:599px) {
+    .hero-cont {
+      align-items: center;
+      position: absolute !important;
+      top: 30% !important;
+      left: 0;
+      .overlay {
+        background: url("../Assets/tab.webp");
+      }
+
+    }
+  }
+  @media only screen and (max-width: 600px) {
+  
+    .overlay {
+      background: url("../Assets/mobile.webp");
+      background-position: bottom center !important;
+    }
+  
+}
 }
 
 .about,
@@ -125,7 +140,12 @@
         height: 450px;
         aspect-ratio: 4/3;
         border-radius: 10px;
-        background: url("https://hips.hearstapps.com/hmg-prod/images/tsinghua-university-main-building-royalty-free-image-1652131625.jpg");
+      }
+      .img7 {
+        background: url("../Assets/student.webp");
+      }
+      .img5 {
+        background: url("../Assets/university.jpg");
       }
     }
     .right {
@@ -136,9 +156,6 @@
       align-items: flex-start;
       justify-content: center;
       gap: 20px;
-
-
-    
     }
   }
 }
@@ -200,7 +217,7 @@
           top: 50%;
           left: 0;
           text-align: center;
-          padding: 10px 0px 0px 0px;
+          padding: 0px 20px;
           line-height: 20px;
           z-index: 4;
           font-size: 18px;
@@ -213,49 +230,46 @@
   .cuf {
     height: 900px;
     .cuf-cont {
-
       .cuf-box-container {
         justify-content: center;
       }
 
-.cu{
-  .about-cont,.cu-cont{
-    flex-direction: row !important;
-  }
-}
-
-
+      .cu {
+        .about-cont,
+        .cu-cont {
+          flex-direction: row !important;
+        }
+      }
     }
   }
-  
-.about,.cu{
-  width: 100%;
-  padding: 40px 0px !important;
-  
-  
-    .about-cont,  .cu-cont{
+
+  .about,
+  .cu {
+    width: 100%;
+    padding: 40px 0px !important;
+
+    .about-cont,
+    .cu-cont {
       flex-direction: column !important;
       gap: var(--gap) !important;
-    
-      .left{
+
+      .left {
         width: 100% !important;
         height: 50% !important;
         padding: 0px 5px !important;
 
-        .box{
-width: 100% !important;
+        .box {
+          width: 100% !important;
         }
       }
-    .right{
-      width: 100% !important;
-      height: 50% !important;
-      
-      h2{
-       
-        line-height: 30px !important;
+      .right {
+        width: 100% !important;
+        height: 50% !important;
+
+        h2 {
+          line-height: 30px !important;
+        }
       }
-      
-    }
     }
   }
 }
@@ -269,48 +283,48 @@ width: 100% !important;
     }
   }
 
-  
+  .about,
+  .cu {
+    width: 100%;
+    padding: 40px 10px !important;
 
-.about,.cu{
-width: 100%;
-padding: 40px 10px !important;
+    .about-cont,
+    .cu-cont {
+      flex-direction: column !important;
+      gap: var(--gap) !important;
 
+      .left {
+        width: 100% !important;
+        height: 50% !important;
+      }
+      .right {
+        width: 100% !important;
+        height: 50% !important;
 
-  .about-cont,  .cu-cont{
-    flex-direction: column !important;
-    gap: var(--gap) !important;
-  
-    .left{
-      width: 100% !important;
-      height: 50% !important;
-
-
-     
-    }
-  .right{
-    width: 100% !important;
-    height: 50% !important;
-
-
-    h2{
-      line-height: 150% !important;
-      max-width: 25ch !important;
-      text-align: center !important;
+        h2 {
+          line-height: 150% !important;
+          max-width: 25ch !important;
+          text-align: center !important;
+        }
+      }
     }
   }
+
+  .hero-cont {
+    
+    align-items: start;
+    position: absolute !important;
+    top: -25% !important;
+    left: 0;
+    h1 {
+      line-height: 40px !important;
+      font-size: 30px !important;
+    }
   }
-}
 
-.hero-cont{
-h1{
-  line-height: 40px !important;
-  font-size: 30px !important;
-}
-}
-
-#root > div > div.parent.cu > div > div.right > h2 {
-  line-height: 150% !important;
-      max-width: 25ch !important;
-      text-align: center !important;
-}
+  #root > div > div.parent.cu > div > div.right > h2 {
+    line-height: 150% !important;
+    max-width: 55ch !important;
+    text-align: center !important;
+  }
 }

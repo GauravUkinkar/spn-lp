@@ -80,7 +80,7 @@ function Home(props) {
             <div className="parent about">
               <div className="cont about-cont">
                 <div className="left">
-                  <div className="box bg-img-cover"></div>
+                  <div className="box img7 bg-img-cover"></div>
                 </div>
                 <div className="right">
                   <h2>{data.about_title}</h2>
@@ -93,7 +93,7 @@ function Home(props) {
             <div className="parent cu">
               <div className="cont cu-cont">
                 <div className="left">
-                  <div className="box bg-img-cover"></div>
+                  <div className="box img5 bg-img-cover"></div>
                 </div>
                 <div className="right">
                   <h2>{data.cu_title}</h2>
